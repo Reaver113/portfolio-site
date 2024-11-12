@@ -8,11 +8,11 @@ interface navItemProps {
 
 export default function NavItem({ item, isSelected }: navItemProps) {
 	return(
-		<div className={`${styles.navItemContainer} group-hover:mt-2`}>
-			<div className={`${styles.navItemImage} ${isSelected === item ? styles.selected : ''} duration-1000 group-hover:h-10 group-hover:w-10`}>
+		<div className={`${styles.navItemContainer}  ${isSelected === item ? '' : 'desktop:hover:bg-[#C1121F]'} desktop:mt-8 desktop:group-hover:mt-0`}>
+			<div className={`${styles.navItemImage} ${isSelected === item ? styles.selected : ''} desktop:group-hover:h-24 desktop:group-hover:w-24 `}>
 				<IconPicker iconName={item}/>
 			</div>
-			<div className={`${styles.navItemTextContainer} h-0 group-hover:h-36 duration-700`}>
+			<div className={`${styles.navItemTextContainer} ${isSelected === item ? styles.selected : ''} desktop:group-hover:w-full`}>
 				<div className={`${styles.navItemName} flex`}>{item}</div>
 			</div>
 		</div>
