@@ -1,15 +1,10 @@
 .navContainer {
-	@apply fixed bg-white;
-	@apply desktop:h-full desktop:w-10 desktop:hover:w-20;
-	@apply tablet:w-full tablet:h-10 hover:tablet:h-20;
-	@apply mobile:w-full mobile:h-10 hover:mobile:h-20; 
+	@apply fixed bg-[#d4a373] z-[999] duration-300 flex items-center justify-center gap-x-10 hover:items-start;
+	@apply desktop:w-full desktop:h-20 desktop:hover:h-52;
+	@apply tablet:w-full tablet:h-16 hover:tablet:h-28;
+	@apply mobile:w-full mobile:h-16 hover:mobile:h-28; 
 }
 
-@keyframes DesktopNavSlideOut {
-	0% {
-		@apply w-10
-	}
-	100% {
-		@apply w-20
-	}
+.itemTransition {
+	@apply duration-500
 }

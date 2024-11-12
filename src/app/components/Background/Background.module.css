@@ -1,0 +1,3 @@
+.backgroundContainer {
+	@apply h-screen w-screen bg-[#faedcd];
+}

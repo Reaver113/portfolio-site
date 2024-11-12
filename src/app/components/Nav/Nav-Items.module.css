@@ -1,5 +1,23 @@
-.navItemsContainer {
-	@apply fixed bg-white h-full w-10 hover:w-20;
+.navItemContainer {
+	@apply flex flex-col items-center  duration-300 cursor-pointer;
 
-	transition: all 0.3s ease-in-out;
+}
+
+.navItemImage {
+	@apply h-14 w-14 hover:bg-[#606c38] p-1 rounded-lg
+}
+
+.navItemTextContainer {
+	@apply mt-2 overflow-hidden
+}
+
+.navItemName {
+	@apply text-white;
+
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+
+.selected {
+	@apply rounded-lg bg-[#283618] hover:bg-[#283618] 
 }

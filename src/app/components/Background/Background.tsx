@@ -1,7 +1,7 @@
-import BackgroundImage from '@/app/Images/Background.png'
+import styles from './Background.module.css'
 
 export default function Background() {
 	return (
-		<div></div>
+		<div className={styles.backgroundContainer} />
 	)
 }

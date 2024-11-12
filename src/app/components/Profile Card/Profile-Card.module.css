@@ -1,0 +1,15 @@
+.profileCardContainer {
+	@apply flex gap-8 items-center justify-center;
+	@apply desktop:w-1/2;
+	@apply tablet:flex-col tablet:w-2/3;
+	@apply mobile:flex-col mobile:w-4/5
+}
+
+.profilePictureContainer {
+	@apply max-h-40 max-w-40 rounded-full overflow-hidden
+}
+
+.profileTextContainer {
+	@apply text-black;
+	@apply desktop:w-full;
+}
