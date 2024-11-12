@@ -1,0 +1,5 @@
+.navItemsContainer {
+	@apply fixed bg-white h-full w-10 hover:w-20;
+
+	transition: all 0.3s ease-in-out;
+}
