@@ -10,7 +10,8 @@ export default {
     screens: {
       mobile: { max: '540px' },
       tablet: { min: '541px', max: '1023px' },
-      desktop: { min: '1024px' }
+      laptop: { min: '1024px', max: '1349px' },
+      desktop: { min: '1350px' }
 
     },
     extend: {
