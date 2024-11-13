@@ -22,10 +22,17 @@ export default function ComponentSwitcher() {
 }
 
 function ComponentContainer(props: {currentComponent: string}) {
-	console.log(props.currentComponent)
-	switch (props.currentComponent) {
-		case 'Profile': return <ProfileCard />
-		case 'Career': return <CareerCard />
-		case 'Interests': return <InterestsCard />
-	}
+	// switch (props.currentComponent) {
+	// 	case 'Profile': return <ProfileCard />
+	// 	case 'Career': return <CareerCard />
+	// 	case 'Interests': return <InterestsCard />
+	// }
+
+	return (
+		<>
+			<ProfileCard currentCard={props.currentComponent} />
+			<CareerCard currentCard={props.currentComponent} />
+			<InterestsCard currentCard={props.currentComponent} />
+		</>
+	)
 }

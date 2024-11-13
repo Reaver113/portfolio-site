@@ -1,14 +1,18 @@
 import BigCard from '../Shared/Big-Card'
+import { CardProps } from '../Shared/Card-Props'
+import CarouselWrapper from '../Shared/Carousel-Wrapper'
 import styles from './Career-Card.module.css'
 import careerText from './Career-Text.json'
 
-export default function CareerCard() {
+export default function CareerCard({currentCard}: CardProps) {
 	return (
-		<BigCard>
-			<div>
-				{careerText.careerText}
-				{careerText.careerText}
-			</div>
-		</BigCard>
+		<CarouselWrapper selectedCard={currentCard} thisCard={Object.keys(careerText)[0]} >
+			<BigCard>
+				<div>
+					{careerText.Career}
+					{careerText.Career}
+				</div>
+			</BigCard>
+		</CarouselWrapper>
 	)
 }
