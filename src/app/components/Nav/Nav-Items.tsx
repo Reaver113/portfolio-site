@@ -1,14 +1,21 @@
 import IconPicker from '@/app/Helpers/SVG-Resolver'
 import styles from './Nav-Items.module.css'
+import { Dispatch, SetStateAction } from 'react'
 
 interface navItemProps {
 	item: string
 	isSelected: string
+	changeSelected: Dispatch<SetStateAction<string>>
 }
 
-export default function NavItem({ item, isSelected }: navItemProps) {
+export default function NavItem({ item, isSelected, changeSelected }: navItemProps) {
+
+	const handleClick = () => {
+		changeSelected(item)
+	}
+
 	return(
-		<div className={`${styles.navItemContainer}  ${isSelected === item ? '' : 'desktop:hover:bg-[#C1121F] laptop:hover:bg-[#C1121F]'} desktop:mt-8 desktop:group-hover:mt-0 laptop:mt-8 laptop:group-hover:mt-0`}>
+		<div onClick={handleClick} className={`${styles.navItemContainer}  ${isSelected === item ? '' : 'desktop:hover:bg-[#C1121F] laptop:hover:bg-[#C1121F]'} desktop:mt-8 desktop:group-hover:mt-0 laptop:mt-8 laptop:group-hover:mt-0`}>
 			<div className={`${styles.navItemImage} ${isSelected === item ? styles.selected : ''} desktop:group-hover:h-24 desktop:group-hover:w-24 laptop:group-hover:h-24 laptop:group-hover:w-24`}>
 				<IconPicker iconName={item}/>
 			</div>

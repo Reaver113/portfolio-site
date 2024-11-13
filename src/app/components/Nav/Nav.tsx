@@ -1,10 +1,11 @@
 import NavItem from './Nav-Items'
 import styles from './Nav.module.css'
 import navContentJSON from './Nav-Content.json'
+import { Dispatch, SetStateAction } from 'react'
 
 
 interface NavProps {
-	changeComponent: any,
+	changeComponent: Dispatch<SetStateAction<string>>,
 	currentComponent: string,
 }
 
@@ -21,7 +22,7 @@ export default function Nav({changeComponent, currentComponent}: NavProps) {
 		<div id='Nav' className={`${styles.navContainer} group`} onMouseLeave={handleMouseLeave}>
 			{navContentJSON.map((navItem, index) => (
 				<div key={`navItem-${index}`} className={` ${styles.itemTransition}`}>
-					<NavItem item={navItem.name} isSelected={currentComponent} />
+					<NavItem item={navItem.name} isSelected={currentComponent} changeSelected={changeComponent} />
 				</div>
 			))}
 		</div>

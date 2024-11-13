@@ -3,6 +3,8 @@ import { useState } from "react";
 import Nav from "../Nav/Nav";
 import ProfileCard from "../Profile Card/Profile-Card";
 import styles from './Component-Switcher.module.css'
+import CareerCard from "../Career Card/Career-Card";
+import InterestsCard from "../Interest Card/Interests-Card";
 
 
 export default function ComponentSwitcher() {
@@ -23,5 +25,7 @@ function ComponentContainer(props: {currentComponent: string}) {
 	console.log(props.currentComponent)
 	switch (props.currentComponent) {
 		case 'Profile': return <ProfileCard />
+		case 'Career': return <CareerCard />
+		case 'Interests': return <InterestsCard />
 	}
 }
