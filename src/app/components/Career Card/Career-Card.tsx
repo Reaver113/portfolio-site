@@ -1,12 +1,14 @@
+import BigCard from '../Shared/Big-Card'
 import styles from './Career-Card.module.css'
 import careerText from './Career-Text.json'
 
 export default function CareerCard() {
 	return (
-		<div className={styles.careerCardContainer}>
+		<BigCard>
 			<div>
 				{careerText.careerText}
+				{careerText.careerText}
 			</div>
-		</div>
+		</BigCard>
 	)
 }
