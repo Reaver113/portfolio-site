@@ -1,0 +1,63 @@
+
+.floraContainer {
+	@apply overflow-hidden
+}
+
+.flora {
+	@apply h-[40rem] w-[24rem] relative
+}
+
+.flora1Positioner,
+.flora2Positioner,
+.flora3Positioner,
+.flora1PositionerFlipped,
+.flora2PositionerFlipped,
+.flora3PositionerFlipped {
+	@apply fixed duration-700
+}
+
+.flora1PositionerFlipped,
+.flora2PositionerFlipped,
+.flora3PositionerFlipped {
+	@apply scale-x-[-1]
+}
+
+.flora1Positioner,
+.flora1PositionerFlipped {
+	@apply bottom-20 z-[9]
+}
+
+.flora2Positioner,
+.flora2PositionerFlipped {
+	@apply -bottom-40 z-[10]
+}
+
+.flora3Positioner,
+.flora3PositionerFlipped {
+	@apply -bottom-8 z-[8]
+}
+
+
+.flora1Positioner {
+	@apply left-0 rotate-[40deg]
+}
+
+.flora1PositionerFlipped {
+	@apply right-0 -rotate-[40deg]
+}
+
+.flora2Positioner {
+	@apply -left-16 rotate-[30deg]
+}
+
+.flora2PositionerFlipped {
+	@apply -right-16 -rotate-[30deg]
+}
+
+.flora3Positioner {
+	@apply left-40
+}
+
+.flora3PositionerFlipped {
+	@apply right-40
+}

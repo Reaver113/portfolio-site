@@ -1,9 +1,9 @@
 .carouselWrapper {
-	@apply flex items-center justify-center
+	@apply flex items-center justify-center overflow-visible
 }
 
 .childWrapper {
-	@apply flex items-center justify-center
+	@apply flex items-center justify-center overflow-visible
 }
 
 .animateIn {
