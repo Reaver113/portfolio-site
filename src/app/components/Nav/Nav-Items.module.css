@@ -6,8 +6,8 @@
 
 .navItemImage {
 	@apply h-14 w-14 p-1 rounded-lg duration-300;
-	@apply tablet:hover:bg-[#C1121F] tablet:h-12 tablet:w-12;
-	@apply mobile:hover:bg-[#C1121F] mobile:h-12 mobile:w-12;
+	@apply tablet:hover:bg-[#d7f9ff] tablet:h-12 tablet:w-12;
+	@apply mobile:hover:bg-[#d7f9ff] mobile:h-12 mobile:w-12;
 }
 
 .navItemTextContainer {
@@ -20,5 +20,24 @@
 }
 
 .selected {
-	@apply rounded-lg bg-[#FFB3C6] hover:bg-[#FFB3C6] 
+	@apply rounded-lg bg-[#ffede1] hover:bg-[#ffede1];
+
+}
+
+
+
+.navItemContainer:hover img {
+	filter: invert(8%) sepia(23%) saturate(4026%) hue-rotate(197deg) brightness(95%) contrast(95%);
+}
+
+.navItemContainer:hover .navItemName {
+	color: #0e1c36;
+}
+
+.selected img {
+	filter: invert(8%) sepia(23%) saturate(4026%) hue-rotate(197deg) brightness(95%) contrast(95%);
+}
+
+.selected .navItemName {
+	color: #0e1c36;
 }

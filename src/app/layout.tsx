@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-[#faedcd] ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`bg-[#afcbff] ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ComponentSwitcher />
       </body>
     </html>

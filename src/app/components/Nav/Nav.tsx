@@ -21,7 +21,6 @@ export default function Nav({changeComponent, currentComponent, changePreviousCo
 
 	const handleMouseLeave = () => {
 		document.getElementById('Nav')?.classList.add(styles.delayedUnhover)
-		console.log(document.getElementsByClassName('navIcon'))
 		setTimeout(()=> {
 			document.getElementById('Nav')?.classList.remove(styles.delayedUnhover)
 			Array.from(document.getElementsByClassName('navIcon'))?.forEach(icon => {

@@ -3,7 +3,7 @@
 }
 
 .profileCard {
-	@apply flex gap-8 items-center justify-center bg-[#669BBC] rounded-3xl;
+	@apply flex gap-8 items-center justify-center bg-[#ffede1] rounded-3xl shadow-sm;
 	@apply desktop:w-1/2 desktop:p-20;
 	@apply laptop:w-3/5 laptop:p-10; 
 	@apply tablet:flex-col tablet:w-2/3 tablet:p-10;

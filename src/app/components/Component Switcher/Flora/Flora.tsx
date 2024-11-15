@@ -24,7 +24,7 @@ export default function Flora({currentComponent}: FloraProps) {
 			case 'flora1': return 'flora2'
 			case 'flora2': return 'flora3'
 			case 'flora3': return 'flora1'
-			default: return 'flora1'
+			default: return ''
 		}
 	}
 
@@ -34,24 +34,30 @@ export default function Flora({currentComponent}: FloraProps) {
 		setFlora3(PositionShift(flora3))
 	}
 
+
+	//I don't know why this prevents the inital animation while elemnts move to position on Firefox but it does so here we are....
+Array.from(document.getElementsByClassName('flora')).forEach(flora => {
+		
+	})
+
 	return (
 		<>
-			<div className={`${styles[`${flora1}Positioner`]}`}>
+			<div className={`flora ${styles[`${flora1}Positioner`]}`}>
 				<FloraHandler type='1' />
 			</div>
-			<div className={`${styles[`${flora1}PositionerFlipped`]}`}>
+			<div className={`flora ${styles[`${flora1}PositionerFlipped`]}`}>
 				<FloraHandler type='2' />
 			</div>
-			<div className={`${styles[`${flora2}Positioner`]}`}>
+			<div className={`flora ${styles[`${flora2}Positioner`]}`}>
 				<FloraHandler type='2' />
 			</div>
-			<div className={`${styles[`${flora2}PositionerFlipped`]}`}>
+			<div className={`flora ${styles[`${flora2}PositionerFlipped`]}`}>
 				<FloraHandler type='3' />
 			</div>
-			<div className={`${styles[`${flora3}Positioner`]}`}>
+			<div className={`flora ${styles[`${flora3}Positioner`]}`}>
 				<FloraHandler type='3' />
 			</div>
-			<div className={`${styles[`${flora3}PositionerFlipped`]}`}>
+			<div className={`flora ${styles[`${flora3}PositionerFlipped`]}`}>
 				<FloraHandler type='1' />
 			</div>
 		</>

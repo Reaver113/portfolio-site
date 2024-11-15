@@ -3,6 +3,14 @@
 	@apply overflow-hidden
 }
 
+.offScreen {
+	@apply -translate-x-[600px]
+}
+
+.offScreenFlipped {
+	@apply translate-x-[600px]
+}
+
 .flora {
 	@apply h-[40rem] w-[24rem] relative
 }
@@ -17,7 +25,7 @@
 .flora1PositionerFlipped,
 .flora2PositionerFlipped,
 .flora3PositionerFlipped {
-	@apply fixed duration-[0.8s]
+	@apply fixed duration-700
 }
 
 .flora1PositionerFlipped,

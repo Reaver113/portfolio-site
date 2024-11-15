@@ -1,5 +1,5 @@
 .navContainer {
-	@apply fixed bg-[#780000] z-[999] duration-300 flex items-center justify-center gap-x-20;
+	@apply fixed bg-[#0e1c36] z-[999] duration-300 flex items-center justify-center gap-x-20;
 	@apply desktop:w-full desktop:h-20 desktop:hover:h-32;
 	@apply laptop:w-full laptop:h-20 laptop:hover:h-32;
 	@apply tablet:w-full tablet:h-16;

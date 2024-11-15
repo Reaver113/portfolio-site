@@ -1,5 +1,5 @@
 .bigCard {
-	@apply bg-[#669BBC] rounded-3xl mb-10;
+	@apply bg-[#ffede1] rounded-3xl mb-10 text-black shadow-sm;
 	@apply desktop:w-1/2 desktop:p-20 desktop:mt-56;
 	@apply laptop:w-3/5 laptop:p-10 laptop:mt-56; 
 	@apply tablet:flex-col tablet:w-2/3 tablet:p-10 tablet:mt-32;

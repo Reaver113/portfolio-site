@@ -1,16 +1,17 @@
-import profileIcon from '../SVGs/Profile_SVG.svg'
-import careerIcon from '../SVGs/Career_SVG.svg'
-import InterestsIcon from '../SVGs/Interests_SVG.svg'
+import ProfileIcon from '../SVGs/Profile_SVG'
+import CareerIcon from '../SVGs/Career_SVG'
+import InterestsIcon from '../SVGs/Interests_SVG'
 import Image from 'next/image'
 
 interface IconProps {
 	iconName: string,
+	fill: string
 }
 
-export default function IconPicker({iconName}: IconProps) {
+export default function IconPicker({iconName, fill}: IconProps) {
 	switch (iconName) {
-		case 'Profile': return <Image src={profileIcon} alt={iconName} />
-		case 'Career': return <Image src={careerIcon} alt={iconName} />
-		case 'Interests': return <Image src={InterestsIcon} alt={iconName} />
+		case 'Profile': return <ProfileIcon fill={fill}/>
+		case 'Career': return <CareerIcon fill={fill}/>
+		case 'Interests': return <InterestsIcon fill={fill}/>
 	}
 }
