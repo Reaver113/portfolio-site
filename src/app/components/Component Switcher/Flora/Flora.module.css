@@ -6,6 +6,10 @@
 .flora {
 	@apply h-[40rem] w-[24rem] relative
 }
+.flora3Positioner,
+.flora3PositionerFlipped {
+	@apply blur-[2px]
+}
 
 .flora1Positioner,
 .flora2Positioner,
@@ -13,7 +17,7 @@
 .flora1PositionerFlipped,
 .flora2PositionerFlipped,
 .flora3PositionerFlipped {
-	@apply fixed duration-700
+	@apply fixed duration-[0.8s]
 }
 
 .flora1PositionerFlipped,
@@ -24,17 +28,17 @@
 
 .flora1Positioner,
 .flora1PositionerFlipped {
-	@apply bottom-20 z-[9]
+	@apply bottom-20 z-[4]
 }
 
 .flora2Positioner,
 .flora2PositionerFlipped {
-	@apply -bottom-40 z-[10]
+	@apply -bottom-40 z-[2]
 }
 
 .flora3Positioner,
 .flora3PositionerFlipped {
-	@apply -bottom-8 z-[8]
+	@apply -bottom-8 z-[1]
 }
 
 
