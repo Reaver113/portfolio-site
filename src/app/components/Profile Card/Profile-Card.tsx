@@ -5,12 +5,12 @@ import profileText from './Profile-Text.json'
 import CarouselWrapper from '../Shared/Carousel-Wrapper'
 import {CardProps} from '../Shared/Card-Props'
 
-export default function ProfileCard({currentCard}: CardProps) {
+export default function ProfileCard({currentCard, previousCard}: CardProps) {
 
 	const text = JSON.stringify(profileText.Profile)
 
 	return (
-		<CarouselWrapper selectedCard={currentCard} thisCard={Object.keys(profileText)[0]} >
+		<CarouselWrapper currentCard={currentCard} previousCard={previousCard} thisCard={Object.keys(profileText)[0]} >
 			<div className={styles.profileCardContainer}>
 				<div className={styles.profileCard}>
 					<div className={styles.profilePictureContainer}>

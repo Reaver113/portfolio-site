@@ -4,9 +4,9 @@ import CarouselWrapper from '../Shared/Carousel-Wrapper'
 import styles from './Interests-Card.module.css'
 import interestsText from './Interests-Text.json'
 
-export default function InterestsCard({currentCard}: CardProps) {
+export default function InterestsCard({currentCard, previousCard}: CardProps) {
 	return (
-		<CarouselWrapper selectedCard={currentCard} thisCard={Object.keys(interestsText)[0]} >
+		<CarouselWrapper currentCard={currentCard} previousCard={previousCard} thisCard={Object.keys(interestsText)[0]} >
 			<BigCard>
 				<div>
 					{interestsText.Interests}

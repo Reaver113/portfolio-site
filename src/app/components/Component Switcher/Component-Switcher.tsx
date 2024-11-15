@@ -10,18 +10,19 @@ import InterestsCard from "../Interest Card/Interests-Card";
 export default function ComponentSwitcher() {
 
 	const [currentComponent, setCurrentComponent] = useState('Profile')
+	const [previousComponent, setPreviousComponent] = useState('Profile')
 
 	return(
 		<>
-			<Nav currentComponent={currentComponent} changeComponent={setCurrentComponent}/>
+			<Nav currentComponent={currentComponent} changeComponent={setCurrentComponent} previousComponent={previousComponent} changePreviousComponent={setPreviousComponent}/>
 			<div className={styles.componentContainer}>
-				<ComponentContainer currentComponent={currentComponent} />
+				<ComponentContainer currentComponent={currentComponent} previousComponent={previousComponent} />
 			</div>
 		</>
 	)
 }
 
-function ComponentContainer(props: {currentComponent: string}) {
+function ComponentContainer(props: {currentComponent: string, previousComponent: string}) {
 	// switch (props.currentComponent) {
 	// 	case 'Profile': return <ProfileCard />
 	// 	case 'Career': return <CareerCard />
@@ -30,9 +31,9 @@ function ComponentContainer(props: {currentComponent: string}) {
 
 	return (
 		<>
-			<ProfileCard currentCard={props.currentComponent} />
-			<CareerCard currentCard={props.currentComponent} />
-			<InterestsCard currentCard={props.currentComponent} />
+			<ProfileCard currentCard={props.currentComponent} previousCard={props.previousComponent}/>
+			<CareerCard currentCard={props.currentComponent} previousCard={props.previousComponent}/>
+			<InterestsCard currentCard={props.currentComponent} previousCard={props.previousComponent}/>
 		</>
 	)
 }

@@ -7,22 +7,24 @@ import { Dispatch, SetStateAction } from 'react'
 interface NavProps {
 	changeComponent: Dispatch<SetStateAction<string>>,
 	currentComponent: string,
+	changePreviousComponent: Dispatch<SetStateAction<string>>,
+	previousComponent: string,
 }
 
-export default function Nav({changeComponent, currentComponent}: NavProps) {
+export default function Nav({changeComponent, currentComponent, changePreviousComponent, previousComponent}: NavProps) {
 
 	const handleMouseLeave = () => {
 		document.getElementById('Nav')?.classList.add(styles.delayedUnhover)
 		setTimeout(()=> {
 			document.getElementById('Nav')?.classList.remove(styles.delayedUnhover)
-		}, 220)
+		}, 150)
 	}
 
 	return (
 		<div id='Nav' className={`${styles.navContainer} group`} onMouseLeave={handleMouseLeave}>
 			{navContentJSON.map((navItem, index) => (
 				<div key={`navItem-${index}`} className={` ${styles.itemTransition}`}>
-					<NavItem item={navItem.name} isSelected={currentComponent} changeSelected={changeComponent} />
+					<NavItem item={navItem.name} currentComponent={currentComponent} changeComponent={changeComponent} previousComponent={previousComponent} changePreviousComponent={changePreviousComponent} />
 				</div>
 			))}
 		</div>

@@ -1,3 +1,42 @@
 .carouselWrapper {
 	@apply flex items-center justify-center
 }
+
+.childWrapper {
+	@apply flex items-center justify-center
+}
+
+.animateIn {
+	animation: animateIn 0.3s ease-in-out;
+}
+
+.animateOut {
+	@apply absolute;
+	animation: animateOut 0.3s ease-in-out;
+}
+
+.hide {
+	@apply hidden
+}
+
+@keyframes animateIn {
+	0% {
+		opacity: 0;
+		transform: translate(1000px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes animateOut {
+	0% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-1000px, 0);
+	}
+}
