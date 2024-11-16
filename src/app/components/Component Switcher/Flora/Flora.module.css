@@ -12,8 +12,19 @@
 }
 
 .flora {
-	@apply h-[40rem] w-[24rem] relative
+	@apply h-auto relative;
+	@apply desktop:w-[26rem];
+	@apply laptop:w-[18rem];
+	@apply tablet:w-[12rem];
+	@apply mobile:w-[8rem];
+
 }
+
+.flora2Positioner,
+.flora2PositionerFlipped {
+	@apply blur-[2px]
+}
+
 .flora3Positioner,
 .flora3PositionerFlipped {
 	@apply blur-[2px]
@@ -36,40 +47,72 @@
 
 .flora1Positioner,
 .flora1PositionerFlipped {
-	@apply bottom-20 z-[4]
+	@apply z-[4];
+	@apply desktop:bottom-40;
+	@apply laptop:bottom-60;
+	@apply tablet:bottom-60;
+	@apply mobile:bottom-60;
+
 }
 
 .flora2Positioner,
 .flora2PositionerFlipped {
-	@apply -bottom-40 z-[2]
+	@apply z-[2];
+	@apply desktop:bottom-0;
+	@apply laptop:bottom-10; 
+	@apply tablet:bottom-20; 
+	@apply mobile:bottom-32; 
+
 }
 
 .flora3Positioner,
 .flora3PositionerFlipped {
-	@apply -bottom-8 z-[1]
+	@apply z-[1];
+	@apply desktop:-bottom-28;
+	@apply laptop:-bottom-20;
+	@apply tablet:-bottom-10;
+	@apply mobile:bottom-0;
 }
 
 
 .flora1Positioner {
-	@apply left-0 rotate-[40deg]
+	@apply desktop:-left-20 desktop:rotate-[20deg];
+	@apply laptop:-left-24 laptop:rotate-[15deg];
+	@apply tablet:-left-16 tablet:-rotate-[0deg];
+	@apply mobile:-left-16 mobile:-rotate-[10deg];
 }
 
 .flora1PositionerFlipped {
-	@apply right-0 -rotate-[40deg]
+	@apply desktop:-right-20 desktop:-rotate-[20deg];
+	@apply laptop:-right-24 laptop:-rotate-[15deg];
+	@apply tablet:-right-16 tablet:rotate-[0deg];
+	@apply mobile:-right-16 mobile:rotate-[10deg];
 }
 
 .flora2Positioner {
-	@apply -left-16 rotate-[30deg]
+	@apply desktop:-left-16 desktop:rotate-[30deg];
+	@apply laptop:-left-24 laptop:rotate-[20deg];
+	@apply tablet:-left-16 tablet:-rotate-[0deg];
+	@apply mobile:-left-16 mobile:rotate-[20deg];
 }
 
 .flora2PositionerFlipped {
-	@apply -right-16 -rotate-[30deg]
+	@apply desktop:-right-16 desktop:-rotate-[30deg];
+	@apply laptop:-right-24 laptop:-rotate-[20deg];
+	@apply tablet:-right-16 tablet:rotate-[0deg];
+	@apply mobile:-right-16 mobile:-rotate-[20deg];
 }
 
 .flora3Positioner {
-	@apply left-40
+	@apply desktop:-left-4 desktop:rotate-[30deg];
+	@apply laptop:-left-0 laptop:rotate-[50deg];
+	@apply tablet:-left-8 tablet:rotate-[30deg];
+	@apply mobile:-left-8 mobile:rotate-[30deg];
 }
 
 .flora3PositionerFlipped {
-	@apply right-40
+	@apply desktop:-right-4 desktop:-rotate-[30deg];
+	@apply laptop:-right-0 laptop:-rotate-[50deg];
+	@apply tablet:-right-8 tablet:-rotate-[30deg];
+	@apply mobile:-right-8 mobile:-rotate-[30deg];
 }

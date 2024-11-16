@@ -16,7 +16,7 @@
 }
 
 .navItemName {
-	@apply text-white;
+	@apply text-[#ffede1];
 }
 
 .selected {

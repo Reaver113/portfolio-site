@@ -23,10 +23,10 @@ export default function NavItem({ item, currentComponent, changeComponent, previ
 		return currentComponent === item
 	}
 
-	const [iconFill, setIconFill] = useState('#ffffff')
+	const [iconFill, setIconFill] = useState('#ffede1')
 
 	useEffect(() => {
-		setIconFill('#ffffff')
+		setIconFill('#ffede1')
 	},[currentComponent])
 
 	const handleHover = () => {
@@ -37,7 +37,7 @@ export default function NavItem({ item, currentComponent, changeComponent, previ
 
 	const handleUnHover = () => {
 		if (!isActive()) {
-			setIconFill('#ffffff')
+			setIconFill('#ffede1')
 		}
 	}
 

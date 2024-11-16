@@ -81,7 +81,7 @@ function FloraHandler({type}: FloraTypes) {
 
 	return (
 		<div className={styles.flora}>
-			<Image src={CherryBlossom()} alt='Cherry Blossom' fill={true}/>
+			<Image layout="relative" src={CherryBlossom()} alt='Cherry Blossom' width={400} height={640}/>
 		</div>
 	)
 }
