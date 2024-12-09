@@ -1,0 +1,33 @@
+.careerAnimationWrapper {
+	position: relative;
+}
+
+.careerAnimation {
+	position: absolute;
+	height: 100%;
+	width: 3px;
+	background-color: black;
+	color: black;
+	left: -30px;
+	animation: careerAnimation 3s ease-in-out;
+}
+
+@keyframes careerAnimation {
+	0% {
+		height: 0px;
+	}
+	100% {
+		height: 100%;
+	}
+}
+
+.circle {
+	position: absolute;
+	color: black;
+	background-color: black;
+	top: -10px;
+	left: -8.25px;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+}

@@ -1,8 +1,18 @@
 import NavItem from './Nav-Items'
 import styles from './Nav.module.css'
-import navContentJSON from './Nav-Content.json'
 import { Dispatch, SetStateAction } from 'react'
 
+const navContent = [
+	{
+		name: 'Profile'
+	},
+	{
+		name: 'Career'
+	},
+	{
+		name: 'Interests'
+	},
+]
 
 interface NavProps {
 	changeComponent: Dispatch<SetStateAction<string>>,
@@ -31,7 +41,7 @@ export default function Nav({changeComponent, currentComponent, changePreviousCo
 
 	return (
 		<div id='Nav' className={`${styles.navContainer} group`} onMouseLeave={handleMouseLeave} onMouseEnter={hoverNav}>
-			{navContentJSON.map((navItem, index) => (
+			{navContent.map((navItem, index) => (
 				<div key={`navItem-${index}`} className={` ${styles.itemTransition}`}>
 					<NavItem item={navItem.name} currentComponent={currentComponent} changeComponent={changeComponent} previousComponent={previousComponent} changePreviousComponent={changePreviousComponent} />
 				</div>

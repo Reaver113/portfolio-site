@@ -34,12 +34,6 @@ export default function Flora({currentComponent}: FloraProps) {
 		setFlora3(PositionShift(flora3))
 	}
 
-
-	//I don't know why this prevents the inital animation while elemnts move to position on Firefox but it does so here we are....
-Array.from(document.getElementsByClassName('flora')).forEach(flora => {
-		
-	})
-
 	return (
 		<>
 			<div className={`flora ${styles[`${flora1}Positioner`]}`}>

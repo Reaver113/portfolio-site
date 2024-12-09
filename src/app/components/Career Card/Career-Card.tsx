@@ -2,17 +2,37 @@ import BigCard from '../Shared/Big-Card'
 import { CardProps } from '../Shared/Card-Props'
 import CarouselWrapper from '../Shared/Carousel-Wrapper'
 import styles from './Career-Card.module.css'
-import careerText from './Career-Text.json'
+import { getCareerDoc } from '../Shared/Fetch/FetchDoc'
+import Markdown from 'react-markdown'
+import { CareerText as CareerTextType } from 'contentlayer/generated'
+
+const CareerText = await getCareerDoc()
+
 
 export default function CareerCard({currentCard, previousCard}: CardProps) {
+
+	const bodyText = CareerText
+
+
+
 	return (
-		<CarouselWrapper currentCard={currentCard} previousCard={previousCard} thisCard={Object.keys(careerText)[0]} >
+		<CarouselWrapper currentCard={currentCard} previousCard={previousCard} thisCard='Career' >
 			<BigCard>
-				<div>
-					{careerText.Career}
-					{careerText.Career}
-				</div>
+				<CareerItem text={bodyText}/>
 			</BigCard>
 		</CarouselWrapper>
+	)
+}
+
+
+function CareerItem({ text }: { text: CareerTextType | undefined }) {
+
+	return (
+		<div className={styles.careerAnimationWrapper}>
+			<div className={styles.careerAnimation}>
+				<div className={styles.circle} />
+			</div>
+				<Markdown>{text?.body.raw}</Markdown>
+		</div>
 	)
 }

@@ -1,0 +1,67 @@
+{
+  "cacheItemsMap": {
+    "documents/Career.md": {
+      "document": {
+        "heading": "Carrer\r",
+        "_id": "documents/Career.md",
+        "_raw": {
+          "sourceFilePath": "documents/Career.md",
+          "sourceFileName": "Career.md",
+          "sourceFileDir": "documents",
+          "contentType": "markdown",
+          "flattenedPath": "documents/Career"
+        },
+        "type": "Career",
+        "slug": "/documents/Career",
+        "slugAsParams": [
+          "documents/Career"
+        ]
+      },
+      "documentHash": "1733733765153",
+      "hasWarnings": false,
+      "documentTypeName": "Career"
+    },
+    "documents/Interests.md": {
+      "document": {
+        "heading": "Interests\r",
+        "_id": "documents/Interests.md",
+        "_raw": {
+          "sourceFilePath": "documents/Interests.md",
+          "sourceFileName": "Interests.md",
+          "sourceFileDir": "documents",
+          "contentType": "markdown",
+          "flattenedPath": "documents/Interests"
+        },
+        "type": "Interest",
+        "slug": "/documents/Interests",
+        "slugAsParams": [
+          "documents/Interests"
+        ]
+      },
+      "documentHash": "1733733769918",
+      "hasWarnings": false,
+      "documentTypeName": "Interest"
+    },
+    "documents/Profile.md": {
+      "document": {
+        "heading": "Profile\r",
+        "_id": "documents/Profile.md",
+        "_raw": {
+          "sourceFilePath": "documents/Profile.md",
+          "sourceFileName": "Profile.md",
+          "sourceFileDir": "documents",
+          "contentType": "markdown",
+          "flattenedPath": "documents/Profile"
+        },
+        "type": "ProfileText",
+        "slug": "/documents/Profile",
+        "slugAsParams": [
+          "documents/Profile"
+        ]
+      },
+      "documentHash": "1733733776835",
+      "hasWarnings": false,
+      "documentTypeName": "ProfileText"
+    }
+  }
+}

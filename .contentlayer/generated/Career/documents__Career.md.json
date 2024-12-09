@@ -1,0 +1,16 @@
+{
+  "heading": "Carrer\r",
+  "_id": "documents/Career.md",
+  "_raw": {
+    "sourceFilePath": "documents/Career.md",
+    "sourceFileName": "Career.md",
+    "sourceFileDir": "documents",
+    "contentType": "markdown",
+    "flattenedPath": "documents/Career"
+  },
+  "type": "Career",
+  "slug": "/documents/Career",
+  "slugAsParams": [
+    "documents/Career"
+  ]
+}
