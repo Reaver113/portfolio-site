@@ -10,10 +10,8 @@ const CareerText = await getCareerDoc()
 
 
 export default function CareerCard({currentCard, previousCard}: CardProps) {
-
+	
 	const bodyText = CareerText
-
-
 
 	return (
 		<CarouselWrapper currentCard={currentCard} previousCard={previousCard} thisCard='Career' >
@@ -32,7 +30,10 @@ function CareerItem({ text }: { text: CareerTextType | undefined }) {
 			<div className={styles.careerAnimation}>
 				<div className={styles.circle} />
 			</div>
+			<div className={styles.markdownWrapper}>
 				<Markdown>{text?.body.raw}</Markdown>
+			</div>
+
 		</div>
 	)
 }
