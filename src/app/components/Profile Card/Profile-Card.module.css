@@ -1,15 +1,15 @@
 .profileCardContainer {
 	@apply h-screen flex items-center justify-center;
-	@apply tablet:items-start;
-	@apply mobile:items-start;
+	@apply tablet:items-start tablet:mt-32;
+	@apply mobile:items-start mobile:mt-20;
 }
 
 .profileCard {
 	@apply flex gap-8 items-center justify-center bg-[#ffede1] rounded-3xl shadow-sm;
 	@apply desktop:w-1/2 desktop:p-12;
 	@apply laptop:w-3/5 laptop:p-10; 
-	@apply tablet:flex-col tablet:w-2/3 tablet:p-10 tablet:mt-32;
-	@apply mobile:flex-col mobile:w-4/5 mobile:p-5 mobile:mt-32;
+	@apply tablet:flex-col tablet:w-2/3 tablet:p-10;
+	@apply mobile:flex-col mobile:w-4/5 mobile:p-5;
 }
 
 .profilePictureContainer {
