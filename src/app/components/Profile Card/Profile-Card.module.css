@@ -20,3 +20,14 @@
 	@apply text-black;
 	@apply desktop:w-full;
 }
+
+.profileFooterContainer {
+	@apply mt-4 flex items-center justify-center
+}
+
+.profileIconContainer {
+	@apply flex flex-col items-center justify-center;
+	@apply desktop:ml-20;
+	@apply laptop:ml-20;
+	@apply tablet:ml-20;
+}

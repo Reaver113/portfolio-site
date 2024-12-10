@@ -12,6 +12,9 @@ export default function CarouselWrapper({children, currentCard, thisCard, previo
 
 	const [currentStyle, setCurrentStyle] = useState('')
 
+	console.log(`this card is ${thisCard}`)
+	console.log(`the current style is ${currentStyle}`)
+
 	useEffect(() => {
 		animateOut()
 	},[currentCard])
@@ -20,13 +23,13 @@ export default function CarouselWrapper({children, currentCard, thisCard, previo
 		setCurrentStyle(styles.animateOut)
 		setTimeout(()=> {
       if (previousCard === thisCard) {
-        setCurrentStyle('hidden');
+        setCurrentStyle('!hidden');
       }
 		},250)
 	}
 
 	return (
-		<div className={`${styles.carouselWrapper} ${currentCard === thisCard ? styles.animateIn : previousCard === thisCard ? currentStyle : 'hidden'}`}>
+		<div className={`${styles.carouselWrapper} ${currentCard === thisCard ? styles.animateIn : previousCard === thisCard ? currentStyle : '!hidden'}`}>
 			<div className={styles.childWrapper}>
 				{children}
 			</div>

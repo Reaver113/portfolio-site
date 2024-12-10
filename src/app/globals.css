@@ -22,6 +22,7 @@ body {
 
 a {
   color: blue;
+  cursor: pointer;
 }
 
 a:hover {

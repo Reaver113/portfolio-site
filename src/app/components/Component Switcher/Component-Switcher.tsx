@@ -36,8 +36,6 @@ function ComponentContainer(props: {currentComponent: string, previousComponent:
     return Object.values(props.documents).find(item => item?.heading.trim().toLowerCase() === headingToMatch.trim().toLowerCase());
 };
 
-	const docList = Object.values(props.documents)
-
 
 	return (
 		<>

@@ -7,9 +7,6 @@ const career = await getCareerDoc();
 const interests = await getInterestsDoc();
 
 export default function Home() {
-
-
-
 	const documents = [
 		profile,
 		career,
