@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ComponentSwitcher from "./components/Component Switcher/Component-Switcher";
+import { getprofileDoc, getCareerDoc, getInterestsDoc } from "./components/Shared/Fetch/FetchDoc";
+
+
+const profile = await getprofileDoc()
+const career = await getCareerDoc()
+const interests = await getInterestsDoc()
+
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,10 +32,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const documents = [
+    profile,
+    career,
+    interests
+  ]
+
   return (
     <html lang="en">
       <body className={`bg-[#afcbff] ${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ComponentSwitcher />
+        <ComponentSwitcher {...documents}/>
       </body>
     </html>
   );

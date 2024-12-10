@@ -1,5 +1,5 @@
 ---
-heading: Carrer
+heading: career
 ---
 
 2023 - Present 

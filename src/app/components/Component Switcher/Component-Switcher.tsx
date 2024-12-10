@@ -6,12 +6,13 @@ import styles from './Component-Switcher.module.css'
 import CareerCard from "../Career Card/Career-Card";
 import InterestsCard from "../Interest Card/Interests-Card";
 import Flora from "./Flora/Flora";
+import { CareerText, InterestsText, ProfileText } from "contentlayer/generated";
 
 
+type Heading = "profile" | "career" | "interests";
 
 
-
-export default function ComponentSwitcher() {
+export default function ComponentSwitcher(documents: (ProfileText | CareerText | InterestsText | undefined)[]) {
 
 	const [currentComponent, setCurrentComponent] = useState('Profile')
 	const [previousComponent, setPreviousComponent] = useState('Profile')
@@ -20,7 +21,7 @@ export default function ComponentSwitcher() {
 		<>
 			<Nav currentComponent={currentComponent} changeComponent={setCurrentComponent} previousComponent={previousComponent} changePreviousComponent={setPreviousComponent}/>
 			<div className={styles.componentContainer}>
-				<ComponentContainer currentComponent={currentComponent} previousComponent={previousComponent} />
+				<ComponentContainer documents={documents} currentComponent={currentComponent} previousComponent={previousComponent} />
 			</div>
 			<div className={styles.floraContainer}>
 				<Flora currentComponent={currentComponent} />
@@ -29,12 +30,20 @@ export default function ComponentSwitcher() {
 	)
 }
 
-function ComponentContainer(props: {currentComponent: string, previousComponent: string}) {
+function ComponentContainer(props: {currentComponent: string, previousComponent: string, documents: (ProfileText | CareerText | InterestsText | undefined)[]}) {
+	
+	const filterDocumentsByHeading = (headingToMatch: Heading) => {
+    return Object.values(props.documents).find(item => item?.heading.trim().toLowerCase() === headingToMatch.trim().toLowerCase());
+};
+
+	const docList = Object.values(props.documents)
+
+
 	return (
 		<>
-			<ProfileCard currentCard={props.currentComponent} previousCard={props.previousComponent}/>
-			<CareerCard currentCard={props.currentComponent} previousCard={props.previousComponent}/>
-			<InterestsCard currentCard={props.currentComponent} previousCard={props.previousComponent}/>
+			<ProfileCard document={filterDocumentsByHeading('profile')} currentCard={props.currentComponent} previousCard={props.previousComponent}/>
+			<CareerCard document={filterDocumentsByHeading('career')} currentCard={props.currentComponent} previousCard={props.previousComponent}/>
+			<InterestsCard document={filterDocumentsByHeading('interests')} currentCard={props.currentComponent} previousCard={props.previousComponent}/>
 		</>
 	)
 }

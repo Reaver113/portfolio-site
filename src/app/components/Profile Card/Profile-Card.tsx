@@ -5,22 +5,17 @@ import CarouselWrapper from '../Shared/Carousel-Wrapper'
 import {CardProps} from '../Shared/Card-Props'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { useEffect, useState } from 'react'
-import { getprofileDoc } from '../Shared/Fetch/FetchDoc'
 
+export default function ProfileCard({currentCard, previousCard, document}: CardProps) {
 
-const loadedDoc = await getprofileDoc()
-
-export default function ProfileCard({currentCard, previousCard}: CardProps) {
-
-	const bodyText = loadedDoc?.body.raw
+	const bodyText = document?.body.raw
 
 	return (
 		<CarouselWrapper currentCard={currentCard} previousCard={previousCard} thisCard='Profile' >
 			<div className={styles.profileCardContainer}>
 				<div className={styles.profileCard}>
 					<div className={styles.profilePictureContainer}>
-						<Image src={pfp} alt='Profile Picture' />
+						<Image priority src={pfp} alt='Profile Picture' />
 					</div>
 					<div className={styles.profileTextContainer}>
 						<Markdown remarkPlugins={[remarkGfm]}>{bodyText}</Markdown>
