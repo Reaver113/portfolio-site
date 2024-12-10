@@ -21,12 +21,13 @@ body {
 }
 
 a {
-  color: blue;
+  color: #023e8a;
   cursor: pointer;
 }
 
 a:hover {
   text-decoration: underline;
+  text-decoration-color: #afcbff;
 }
 
 

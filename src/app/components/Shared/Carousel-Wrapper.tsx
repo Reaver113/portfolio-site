@@ -12,9 +12,6 @@ export default function CarouselWrapper({children, currentCard, thisCard, previo
 
 	const [currentStyle, setCurrentStyle] = useState('')
 
-	console.log(`this card is ${thisCard}`)
-	console.log(`the current style is ${currentStyle}`)
-
 	useEffect(() => {
 		animateOut()
 	},[currentCard])

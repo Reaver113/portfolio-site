@@ -1,15 +1,13 @@
 .profileCardContainer {
-	@apply h-screen flex items-center justify-center;
-	@apply tablet:items-start tablet:mt-32;
-	@apply mobile:items-start mobile:mt-20;
+	@apply flex items-center justify-center
 }
 
 .profileCard {
 	@apply flex gap-8 items-center justify-center bg-[#ffede1] rounded-3xl shadow-sm;
-	@apply desktop:w-1/2 desktop:p-12;
-	@apply laptop:w-3/5 laptop:p-10; 
-	@apply tablet:flex-col tablet:w-2/3 tablet:p-10;
-	@apply mobile:flex-col mobile:w-4/5 mobile:p-5;
+	@apply desktop:w-1/2 desktop:p-12 desktop:mt-60;
+	@apply laptop:w-3/5 laptop:p-10 laptop:mt-44; 
+	@apply tablet:flex-col tablet:w-2/3 tablet:p-10 tablet:mt-32;
+	@apply mobile:flex-col mobile:w-4/5 mobile:p-5 mobile:mt-28;
 }
 
 .profilePictureContainer {
@@ -26,8 +24,20 @@
 }
 
 .profileIconContainer {
-	@apply flex flex-col items-center justify-center;
+	@apply flex flex-col items-center justify-center hover:bg-[#0e1c36] rounded-2xl p-4 duration-150;
 	@apply desktop:ml-20;
 	@apply laptop:ml-20;
 	@apply tablet:ml-20;
+}
+
+.porfileIcon {
+	@apply duration-150;
+}
+
+.profileIconText {
+	@apply !text-[#023e8a]
+}
+
+.profileIconContainer:hover .profileIconText {
+	@apply !text-[#afcbff] duration-150 !no-underline;
 }
