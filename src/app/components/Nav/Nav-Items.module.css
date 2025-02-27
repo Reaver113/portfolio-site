@@ -1,18 +1,18 @@
 .navItemContainer {
 	@apply flex flex-col items-center duration-300 cursor-pointer rounded-lg;
-	@apply tablet:mt-2 mobile:mt-2
 
 }
 
 .navItemImage {
 	@apply h-14 w-14 p-1 rounded-lg duration-300;
-	@apply tablet:hover:bg-[#d7f9ff] tablet:h-12 tablet:w-12;
-	@apply mobile:hover:bg-[#d7f9ff] mobile:h-12 mobile:w-12;
+	@apply tablet:h-12 tablet:w-12;
+	@apply mobile:h-12 mobile:w-12;
 }
 
 .navItemTextContainer {
-	@apply mt-2 overflow-hidden flex items-center justify-center duration-300;
-	@apply w-0 tablet:h-0 mobile:h-0;
+	@apply mt-2 px-1 flex items-center justify-center;
+	@apply tablet:text-[12px] tablet:mt-1 ;
+	@apply mobile:text-[12px] mobile:mt-1;
 }
 
 .navItemName {

@@ -1,15 +1,8 @@
 .navContainer {
 	@apply fixed bg-[#0e1c36] z-[999] duration-300 flex items-center justify-center gap-x-20;
-	@apply desktop:w-full desktop:h-20 desktop:hover:h-32;
-	@apply laptop:w-full laptop:h-20 laptop:hover:h-32;
-	@apply tablet:w-full tablet:h-16;
-	@apply mobile:w-full mobile:h-16; 
+	@apply desktop:w-full desktop:h-28;
+	@apply laptop:w-full laptop:h-28;
+	@apply tablet:w-full tablet:h-20;
+	@apply mobile:w-full mobile:h-20; 
 }
-
-.itemTransition {
-	@apply duration-500
-}
-
-.delayedUnhover {
-	@apply desktop:h-32 laptop:h-32
-}
+ 

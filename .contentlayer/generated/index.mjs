@@ -6,10 +6,12 @@ export { isType } from 'contentlayer/client'
 // During (production) builds Contentlayer it imports from `.json` files to improve build performance.
 import allProfileTexts from './ProfileText/_index.json' assert { type: 'json' }
 import allCareerTexts from './CareerText/_index.json' assert { type: 'json' }
-import allInterestsTexts from './InterestsText/_index.json' assert { type: 'json' }
+import allSBCsTexts from './SBCsText/_index.json' assert { type: 'json' }
+import allFPVTexts from './FPVText/_index.json' assert { type: 'json' }
+import allTekkenTexts from './TekkenText/_index.json' assert { type: 'json' }
 
-export { allProfileTexts, allCareerTexts, allInterestsTexts }
+export { allProfileTexts, allCareerTexts, allSBCsTexts, allFPVTexts, allTekkenTexts }
 
-export const allDocuments = [...allProfileTexts, ...allCareerTexts, ...allInterestsTexts]
+export const allDocuments = [...allProfileTexts, ...allCareerTexts, ...allSBCsTexts, ...allFPVTexts, ...allTekkenTexts]
 
 

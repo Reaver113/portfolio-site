@@ -1,0 +1,30 @@
+.wrapper {
+    @apply relative;
+
+    
+    .SBCDoc,
+    .FPVDoc,
+    .TekkenDoc {
+        @apply mb-16 relative gap-8 flex
+    }
+
+    .SBCDoc {
+        
+        & div p img {
+            @apply desktop:w-[300px] desktop:h-[400px]
+        }
+    }
+
+    .FPVDoc {
+        
+    }
+
+    .TekkenDoc {
+        
+        & div p img {
+            @apply desktop:w-[400px] desktop:h-[300px] block
+        }
+    }
+
+
+}

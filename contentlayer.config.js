@@ -3,6 +3,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 
@@ -43,9 +44,35 @@ export const CareerDoc = defineDocumentType(() => ({
 	computedFields
 }))
 
-export const InterestsDoc = defineDocumentType(() => ({
-	name: 'InterestsText',
-	filePathPattern: 'documents/Interests.md',
+export const SBCsDoc = defineDocumentType(() => ({
+	name: 'SBCsText',
+	filePathPattern: 'documents/Interests/SBCs.md',
+	contentType: 'mdx',
+	fields: {
+		heading: {
+			type: 'string',
+			required: true,
+		}
+	},
+	computedFields
+}))
+
+export const FPVDoc = defineDocumentType(() => ({
+	name: 'FPVText',
+	filePathPattern: 'documents/Interests/FPV.md',
+	contentType: 'mdx',
+	fields: {
+		heading: {
+			type: 'string',
+			required: false,
+		}
+	},
+	computedFields
+}))
+
+export const TekkenDoc = defineDocumentType(() => ({
+	name: 'TekkenText',
+	filePathPattern: 'documents/Interests/Tekken.md',
 	contentType: 'mdx',
 	fields: {
 		heading: {
@@ -58,7 +85,7 @@ export const InterestsDoc = defineDocumentType(() => ({
 
 export default makeSource ({
 	contentDirPath: 'src/app/',
-	documentTypes: [ProfileDoc, CareerDoc, InterestsDoc],
+	documentTypes: [ProfileDoc, CareerDoc, SBCsDoc, FPVDoc, TekkenDoc],
 	mdx: {
 		remarkPlugins: [remarkGfm],
 		rehypePlugins: [

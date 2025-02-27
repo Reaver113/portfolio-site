@@ -4,7 +4,7 @@ heading: career
 
 2023 - Present 
 ##### **Village RoadShow Theme Parks** 
-Junior Website Developer 
+Website Developer 
 
 &nbsp;
 &nbsp;
@@ -12,8 +12,8 @@ Junior Website Developer
 &nbsp;
 &nbsp;
 
-Responsible for **development and release** of the new suite of Village
-Roadshow Theme parks websites, Including: 
+Responsible for **development and release** of the new suite of **Village
+Roadshow Theme Parks** websites, Including: 
 
 &nbsp;
 &nbsp;
@@ -34,9 +34,9 @@ Roadshow Theme parks websites, Including:
 * Knowledge and understanding of the **NEXT Js** Framework using
 **TypeScript** with an emphasis on **Front End** development 
 * Basic Implementation of **Google Tag Manager** and **Google Analytics** 
-* Integration with Content Management System (CMS) Contentful and
-interaction with its API using GraphQL 
+* Integration with **Content Management System** (CMS) Contentful and
+interaction with its **API using GraphQL** 
 * Use of **Atlassian** programs such as **Jira** for project management and **Bitbucket** for source control 
-* Liaise with Art, Brand, Media and Analytics teams to deliver websites
-that will champion the Village Roadshow brands and best deliver
-information to (potential) customers while adhering to strict policy and branding guidelines and release deadlines 
+* **Liaise** with Art, Brand, Media and Analytics teams to **deliver websites**
+that will champion the **Village Roadshow** brands and best deliver
+information to (potential) customers while **adhering to strict policy and branding guidelines and release deadlines** 

@@ -1,6 +1,0 @@
----
-heading: interests
----
-
-#### FPV Drones
-

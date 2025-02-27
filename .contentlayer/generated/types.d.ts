@@ -20,12 +20,12 @@ export type CareerText = {
   slugAsParams: string
 }
 
-export type InterestsText = {
+export type FPVText = {
   /** File path relative to `contentDirPath` */
   _id: string
   _raw: Local.RawDocumentData
-  type: 'InterestsText'
-  heading: string
+  type: 'FPVText'
+  heading?: string | undefined
   /** MDX file body */
   body: MDX
   slug: string
@@ -42,6 +42,30 @@ export type ProfileText = {
   body: MDX
   slug: string
   slugAsParams: string
+}
+
+export type SBCsText = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'SBCsText'
+  heading: string
+  /** MDX file body */
+  body: MDX
+  slug: string
+  slugAsParams: string
+}
+
+export type TekkenText = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'TekkenText'
+  heading: string
+  /** MDX file body */
+  body: MDX
+  slug: string
+  slugAsParams: string
 }  
 
 /** Nested types */
@@ -52,8 +76,8 @@ export type ProfileText = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = CareerText | InterestsText | ProfileText
-export type DocumentTypeNames = 'CareerText' | 'InterestsText' | 'ProfileText'
+export type DocumentTypes = CareerText | FPVText | ProfileText | SBCsText | TekkenText
+export type DocumentTypeNames = 'CareerText' | 'FPVText' | 'ProfileText' | 'SBCsText' | 'TekkenText'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -62,7 +86,9 @@ export type DataExports = {
   allDocuments: DocumentTypes[]
   allProfileTexts: ProfileText[]
   allCareerTexts: CareerText[]
-  allInterestsTexts: InterestsText[]
+  allSBCsTexts: SBCsText[]
+  allFPVTexts: FPVText[]
+  allTekkenTexts: TekkenText[]
 }
 
 
@@ -83,8 +109,10 @@ declare global {
 
 export type DocumentTypeMap = {
   CareerText: CareerText
-  InterestsText: InterestsText
+  FPVText: FPVText
   ProfileText: ProfileText
+  SBCsText: SBCsText
+  TekkenText: TekkenText
 }
 
 export type NestedTypeMap = {
