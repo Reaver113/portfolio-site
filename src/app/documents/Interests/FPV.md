@@ -11,7 +11,7 @@ heading: FPV
   When I first started <b>building my own FPV drone</b>, I quickly realized it was more than just putting parts together, it was a mix of <b>electronics, mechanics, and software tuning</b>. I had to choose the right components: a sturdy frame, a <b>flight controller</b> with the right <b>firmware</b> (I went with Betaflight), <b>ESCs</b> that could handle my motor’s power, and a video system that wouldn’t introduce too much latency. <b>Soldering</b> was a skill I had to pick up fast since proper wiring is crucial for a stable build. Once everything was assembled, I spent hours in <b>Betaflight</b> configuring my flight controller, calibrating the sensors, and tweaking <b>PID</b> settings to make sure my drone wouldn’t just flip over the moment I tried to take off.
 
   <video width="400" height="225" autoPlay loop>
-    <source src="/Soldering.webm" type="video/webm" />
+    <source src="/public//Soldering.webm" type="video/webm" />
   </video>
 
 </div>
@@ -19,7 +19,7 @@ heading: FPV
 &nbsp;
 
 <video width="400" height="225" autoPlay loop>
-  <source src="/FPV.webm" type="video/webm" />
+  <source src="/public//FPV.webm" type="video/webm" />
 </video>
 
 <div clasName='paragraphWrapper'>
