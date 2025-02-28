@@ -10,7 +10,7 @@ heading: Tekken
 <div clasName='paragraphWrapper'>
 When I first started playing <b>TEKKEN</b> seriously, I quickly realized it wasn’t just about pressing buttons, it was about understanding the <b>mechanics</b> behind every move. <b>Frame data</b> was one of the first things I had to wrap my head around. I learned that every attack has <b>startup frames</b> (how fast it comes out), <b>active frames</b> (when it can hit), and <b>recovery frames</b> (how long I’m stuck afterward). The most important part was figuring out <b>frame advantage</b>, if my move left me at negative frames, my opponent could act first, but if I had plus frames, I could keep the pressure going. I also had to start recognizing which moves were unsafe so I could punish properly instead of letting my opponent get away with mistakes. At first, it was overwhelming, especially since every character has so many moves, but the more I played, the more these things started clicking.
 
-<img className='TekkenImage' src='/public/Tekken.jpg' />
+<Image className='TekkenImage' src='/Tekken.jpg' />
 
 </div>
 

@@ -10,7 +10,7 @@ heading: SBCs
 <div clasName='paragraphWrapper'>
 When I set out to build my own <b>home media and Git server</b>, I decided to use a <b>Raspberry Pi</b> and run <b>Plex</b> on <b>Debian Linux</b>. Setting up the media server was fairly straightforward—I installed Plex, connected an <b>external SSD</b> for storage, and configured <b>Samba</b> so I could <b>access my media from other devices</b>. Getting the Git server up and running was a bit trickier. I went with <b>Gitea</b> since it’s lightweight, but I had to spend some time configuring <b>SSH access</b>, setting up <b>static IPs</b>, and making sure my <b>firewall rules</b> were solid. I also learned the hard way that <b>cooling</b> is important. At first, my Pi would <b>slow down under load</b>, but adding a <b>heatsink and fan</b> solved the problem. Overall, the Raspberry Pi worked well, but I started wondering if I could get the same setup running on a cheaper <b>Orange Pi</b>.
 
-<img className='SBCImage' src='/public/SBCs.jpg' />
+<Image className='SBCImage' src='/SBCs.jpg' />
 
 </div>
 
