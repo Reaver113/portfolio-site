@@ -10,19 +10,66 @@
 
     .SBCDoc {
         
-        & div p img {
-            @apply desktop:w-[300px] desktop:h-[400px]
+        & div div  {
+
+            @apply flex relative gap-8
+            tablet:flex-col
+            mobile:flex-col;
+
+            & div {
+                @apply block 
+            }
+
+            & img {
+                @apply rounded-xl
+                desktop:w-[300px] desktop:h-[400px]
+                laptop:w-[300px] laptop:h-[400px]
+
+            }
         }
     }
 
     .FPVDoc {
+
+        & div div  {
+            @apply flex relative gap-8
+            tablet:flex-col
+            mobile:flex-col;
+
+            & div {
+                @apply block; 
+            }
+
+            & iframe {
+                @apply rounded-xl
+                tablet:w-[100%]
+                mobile:w-[100%]
+            }
+        }
+        & div div:last-child {
+            @apply tablet:flex-col-reverse
+            mobile:flex-col-reverse;
+        }
         
     }
 
     .TekkenDoc {
         
-        & div p img {
-            @apply desktop:w-[400px] desktop:h-[300px] block
+        & div div  {
+
+            @apply flex relative gap-8
+            tablet:flex-col
+            mobile:flex-col;
+
+            & div {
+                @apply block 
+            }
+
+            & img {
+                @apply rounded-xl
+                desktop:w-[300px] desktop:h-[200px]
+                laptop:w-[300px] laptop:h-[200px]
+            }
         }
     }
 
