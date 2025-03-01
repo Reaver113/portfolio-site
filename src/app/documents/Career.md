@@ -2,9 +2,11 @@
 heading: career
 ---
 
-2023 - Present 
-##### **Village RoadShow Theme Parks** 
-Website Developer 
+2023 - Present
+
+##### **Village Roadshow Theme Parks**
+
+Website Developer
 
 &nbsp;
 &nbsp;
@@ -13,30 +15,30 @@ Website Developer
 &nbsp;
 
 Responsible for **development and release** of the new suite of **Village
-Roadshow Theme Parks** websites, Including: 
+Roadshow Theme Parks** websites, Including:
 
 &nbsp;
 &nbsp;
 
-- [Topgolf.com.au](https://Topgolf.com.au) 
-- [Movieworld.com.au](https://Movieworld.com.au) 
-- [Themeparks.com.au](https://Themeparks.com.au) 
+- [Topgolf.com.au](https://Topgolf.com.au)
+- [Movieworld.com.au](https://Movieworld.com.au)
+- [Themeparks.com.au](https://Themeparks.com.au)
 - [Wetnwild.com.au](https://Wetnwild.com.au)
 
 &nbsp;
 &nbsp;
 
-#### **Key Responsibilities:**  
+#### **Key Responsibilities:**
 
 &nbsp;
 &nbsp;
 
-* Knowledge and understanding of the **NEXT Js** Framework using
-**TypeScript** with an emphasis on **Front End** development 
-* Basic Implementation of **Google Tag Manager** and **Google Analytics** 
-* Integration with **Content Management System** (CMS) Contentful and
-interaction with its **API using GraphQL** 
-* Use of **Atlassian** programs such as **Jira** for project management and **Bitbucket** for source control 
-* **Liaise** with Art, Brand, Media and Analytics teams to **deliver websites**
-that will champion the **Village Roadshow** brands and best deliver
-information to (potential) customers while **adhering to strict policy and branding guidelines and release deadlines** 
+- Knowledge and understanding of the **NEXT Js** Framework using
+  **TypeScript** with an emphasis on **Front End** development
+- Basic Implementation of **Google Tag Manager** and **Google Analytics**
+- Integration with **Content Management System** (CMS) Contentful and
+  interaction with its **API using GraphQL**
+- Use of **Atlassian** programs such as **Jira** for project management and **Bitbucket** for source control
+- **Liaise** with Art, Brand, Media and Analytics teams to **deliver websites**
+  that will champion the **Village Roadshow** brands and best deliver
+  information to (potential) customers while **adhering to strict policy and branding guidelines and release deadlines**
