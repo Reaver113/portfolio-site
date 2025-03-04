@@ -16,11 +16,12 @@
 
 .profileTextContainer {
 	@apply text-black;
-	@apply desktop:w-full;
+	@apply w-full;
 }
 
 .profileFooterContainer {
-	@apply mt-4 flex items-center justify-center
+	@apply mt-4 flex items-center justify-center w-full
+	mobile:block
 }
 
 .profileIconContainer {
