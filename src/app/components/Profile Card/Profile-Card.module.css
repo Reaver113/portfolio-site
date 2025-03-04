@@ -15,13 +15,16 @@
 }
 
 .profileTextContainer {
-	@apply text-black;
-	@apply w-full;
+	@apply text-black w-full;
 }
 
 .profileFooterContainer {
 	@apply mt-4 flex items-center justify-center w-full
 	mobile:block
+}
+
+.link {
+    @apply mobile:break-words
 }
 
 .profileIconContainer {

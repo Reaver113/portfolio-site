@@ -33,6 +33,7 @@ export default function ProfileCard({
               <div className={styles.profileLink}>
                 You can visit the source code for this site here:{" "}
                 <a
+                  className={styles.link}
                   target="_blank"
                   href="https://github.com/Reaver113/portfolio-site"
                 >
